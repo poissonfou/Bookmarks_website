@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js" defer></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <header class="header">
+        <img class="logo" src="images/logo-bookmark.svg" alt="logo">
+
+        <div class="header__nav">
+            <img class="header__menubtn" src="images/icon-hamburger.svg" alt="menu button" id="hamburguer-menu">
+            <nav class="nav" id="nav-mobile">
+                <div>
+                    <div class="nav__topsection">
+                        <img class="logo" src="images/logo-bookmark-mobilemenu.svg" alt="logo">
+                        <img class="nav__closebtn" src="images/icon-close.svg" alt="close button" id="close-btn">
+                    </div>
+
+                    <ul class="nav__links">
+                        <li class="nav__link">Features</li>
+                        <li class="nav__link">Pricing</li>
+                        <li class="nav__link">Contact</li>
+                        <li class="nav__link">
+                            <button class="nav__linkbtn">Login</button>
+                        </li>
+                    </ul>
+                </div>
+
+
+                <div class="nav__linksocials">
+                    <img src="images/icon-facebook.svg" alt="facebook">
+                    <img src="images/icon-twitter.svg" alt="twitter">
+                </div>
+            </nav>
+        </div>
+        <nav class="nav__desktop">
+            <ul class="nav__links nav__links--desktop">
+                <li class="nav__link nav__link--desktop">Features</li>
+                <li class="nav__link nav__link--desktop">Pricing</li>
+                <li class="nav__link nav__link--desktop">Contact</li>
+                <li class="nav__link nav__link--desktop">
+                    <button class="nav__linkbtn nav__linkbtn--desktop">Login</button>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="hero">
+        <img src="images/illustration-hero.svg" alt="illustration">
+        <div class="hero__content">
+            <h1 class="hero__title">A Simple Bookmark Manager</h1>
+            <p class="hero__text">A clean and simple interface to organize your favorite websites. Open a new browser
+                tab and see your sites load instantly. Try it for free.
+            </p>
+            <div class="hero__links">
+                <button class="hero__link hero__link--chrome">Get it on Chrome</button>
+                <button class="hero__link">Get it on Firefox</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="features">
+        <h2 class="features__title">Features</h2>
+        <p class="features__text">Our aim is to make it wuick and easy for you to access your favorite websites. Your
+            bookmark sync between your devices so you can access them on the go.
+        </p>
+
+        <ul class="features__nav" role="tablist" aria-label="features list">
+            <li aria-selected="true" aria-controls="bookmarking-tab" role="tab" tabindex="0"
+                data-image="illustration-one" class="features__tab">Simple
+                Bookmarking</li>
+            <li aria-selected="false" aria-controls="searching-tab" role="tab" tabindex="-1"
+                data-image="illustration-two" class="features__tab">
+                Speedy
+                Searching</li>
+            <li aria-selected="false" aria-controls="sharing-tab" role="tab" tabindex="-1"
+                data-image="illustration-three" class="features__tab">
+                Easy
+                Sharing</li>
+        </ul>
+        <div class="features__content">
+            <picture id="illustration-one">
+                <img src="images/illustration-features-tab-1.svg" alt="illustration">
+            </picture>
+            <picture hidden id="illustration-two">
+                <img src="images/illustration-features-tab-2.svg" alt="illustration">
+            </picture>
+            <picture hidden id="illustration-three">
+                <img src="images/illustration-features-tab-3.svg" alt="illustration">
+            </picture>
+
+            <article class="features__tabtext" id="bookmarking-tab" role="tabpanel" tabindex="0">
+                <h3 class="tab__title">Bookmark in one click</h3>
+                <p class="tab__text">Organize your bookmarks however you like. Our simple drag-and-drop interface
+                    gives you complete control over how you manage your favorite sites.
+                </p>
+                <a class="features__link">More info</a>
+            </article>
+            <article hidden class="features__tabtext" id="searching-tab" role="tabpanel" tabindex="0">
+                <h3 class="tab__title">Intelligent search</h3>
+                <p class="tab__text">Our powerful search feature will heap you find saved sites in no time at all.
+                    No need to trawl through all of your bookmarks</p>
+                <a class="features__link">More info</a>
+            </article>
+            <article hidden class="features__tabtext" id="sharing-tab" role="tabpanel" tabindex="0">
+                <h3 class="tab__title">Share your bookmarks</h3>
+                <p class="tab__text">Easily share your bookmarks and collections with others. Create a shareable link
+                    that you can send at the click of a button.
+                </p>
+                <a class="features__link">More info</a>
+            </article>
+        </div>
+    </div>
+
+    <main class="downloads">
+        <h2 class="downloads__title">Download the extension</h2>
+        <p class="downloads__text">We've got more browsers in the pipeline. please do let us know if you've got a
+            favourite you'd like us to
+            prioritize.</p>
+
+        <div class="downloads__options">
+            <div class="download__option">
+                <img class="browser__img" src="images/logo-chrome.svg" alt="chrome">
+                <h4 class="option__title">Add to Chrome</h4>
+                <p class="option__info"><small>Minimun version 62</small></p>
+                <img class="dots__img" src="images/bg-dots.svg" alt="dots">
+                <button class="download__link">Add & Install Extension</button>
+            </div>
+            <div class="download__option">
+                <img class="browser__img" src="images/logo-firefox.svg" alt="firefox">
+                <h4 class="option__title">Add to Firefox</h4>
+                <p class="option__info"><small>Minimun version 55</small></p>
+                <img class="dots__img" src="images/bg-dots.svg" alt="dots">
+                <button class="download__link">Add & Install Extension</button>
+            </div>
+            <div class="download__option">
+                <img class="browser__img" src="images/logo-opera.svg" alt="opera">
+                <h4 class="option__title">Add to Opera</h4>
+                <p class="option__info"><small>Minimun version 46</small></p>
+                <img class="dots__img" src="images/bg-dots.svg" alt="dots">
+                <button class="download__link">Add & Install Extension</button>
+            </div>
+        </div>
+    </main>
+
+    <div class="questions">
+        <h2 class="questions__title">Frequently Asked Questions</h2>
+        <p class="questions__text">
+            Here are some of our FAQs. If you have any other questions you'd like answered please feel free to email us.
+        </p>
+
+        <div class="questions__tabs" aria-label="faq" role="tablist">
+            <div>
+                <div class="question__tab" aria-controls="question-one" role="tab" aria-selected="false" tabindex="0">
+                    <span class="tab__title--faq">What is a Bookmark?</span>
+                    <img class="arrow__icon" src="images/icon-arrow.svg" alt="arrow icon">
+                </div>
+                <article class="question__answer" id="question-one" role="tabpanel" tabindex="-1">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores pariatur harum sint.
+                        Voluptatem, iusto delectus. Rem neque culpa dolores dignissimos unde corporis quasi, sequi odio?
+                        Architecto iste fuga pariatur corrupti!</p>
+                </article>
+            </div>
+            <div>
+                <div class="question__tab" aria-controls="question-two" role="tab" aria-selected="false" tabindex="0">
+                    <span class="tab__title--faq">How can I request a new browser?</span>
+                    <img class="arrow__icon" src="images/icon-arrow.svg" alt="arrow icon">
+                </div>
+                <article class="question__answer" id="question-two" role="tabpanel" tabindex="-1">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores pariatur harum sint.
+                        Voluptatem, iusto delectus. Rem neque culpa dolores dignissimos unde corporis quasi, sequi odio?
+                        Architecto iste fuga pariatur corrupti!</p>
+                </article>
+            </div>
+            <div>
+                <div class="question__tab" aria-controls="question-three" role="tab" aria-selected="false" tabindex="0">
+                    <span class="tab__title--faq">Is there a mobile app?</span>
+                    <img class="arrow__icon" src="images/icon-arrow.svg" alt="arrow icon">
+                </div>
+                <article class="question__answer" id="question-three" role="tabpanel" tabindex="-1">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores pariatur harum sint.
+                        Voluptatem, iusto delectus. Rem neque culpa dolores dignissimos unde corporis quasi, sequi odio?
+                        Architecto iste fuga pariatur corrupti!</p>
+                </article>
+            </div>
+            <div>
+                <div class="question__tab" aria-controls="question-four" role="tab" aria-selected="false" tabindex="0">
+                    <span class="tab__title--faq">What about other Chromiun browsers?</span>
+                    <img class="arrow__icon" src="images/icon-arrow.svg" alt="arrow icon">
+                </div>
+                <article class="question__answer" id="question-four" role="tabpanel" tabindex="-1">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores pariatur harum sint.
+                        Voluptatem, iusto delectus. Rem neque culpa dolores dignissimos unde corporis quasi, sequi odio?
+                        Architecto iste fuga pariatur corrupti!</p>
+                </article>
+            </div>
+        </div>
+
+        <button class="questions__more">More info</button>
+    </div>
+
+    <div class="contact">
+        <p>35.000+ already joined</p>
+        <h2 class="contact__title">Stay up-to-date with what we're doing</h2>
+        <div class="contact__formbox">
+            <form role="form" action="POST" class="contact__form" id="contact-form">
+                <div class="contact__inputbox" id="input-box">
+                    <input class="contact__input" placeholder="Enter your email address" type="email" name="email">
+                    <img hidden class="contact__erroricon" id="error-icon" src="images/icon-error.svg" alt="error">
+                </div>
+                <p hidden class="contact__errormsg" id="error-msg"><i>Whoops, make sure it's an email</i></p>
+                <button class="contact__submit" type="submit">Contact Us</button>
+            </form>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer__navcontainer">
+            <svg class="footer__logo" width="148" height="25" xmlns="http://www.w3.org/2000/svg">
+                <g fill="none" fill-rule="evenodd">
+                    <path
+                        d="M37 6.299h5.227c.746 0 1.434.155 2.062.466.629.311 1.123.735 1.484 1.27s.542 1.12.542 1.754c0 .672-.165 1.254-.495 1.746-.33.491-.762.868-1.297 1.129v.15c.697.248 1.25.643 1.661 1.185.41.541.616 1.191.616 1.95 0 .735-.196 1.385-.588 1.951a3.817 3.817 0 0 1-1.587 1.307c-.665.305-1.403.457-2.212.457H37V6.299zm5.04 5.45c.548 0 .986-.152 1.316-.457.33-.305.495-.688.495-1.148 0-.448-.159-.824-.476-1.13-.318-.304-.738-.457-1.26-.457H39.52v3.192h2.52zm.28 5.619c.61 0 1.086-.159 1.428-.476.342-.317.513-.731.513-1.241 0-.51-.174-.927-.522-1.251-.349-.324-.847-.485-1.494-.485H39.52v3.453h2.8zm12.927 2.595c-1.307 0-2.492-.308-3.556-.924a6.711 6.711 0 0 1-2.511-2.53c-.61-1.07-.915-2.246-.915-3.528 0-1.281.305-2.457.915-3.528a6.711 6.711 0 0 1 2.51-2.529C52.756 6.308 53.94 6 55.248 6c1.306 0 2.492.308 3.556.924a6.711 6.711 0 0 1 2.51 2.53c.61 1.07.915 2.246.915 3.527 0 1.282-.305 2.458-.915 3.528a6.711 6.711 0 0 1-2.51 2.53c-1.064.616-2.25.924-3.556.924zm0-2.39a4.52 4.52 0 0 0 2.258-.578 4.177 4.177 0 0 0 1.615-1.624c.392-.697.588-1.494.588-2.39 0-.896-.196-1.692-.588-2.389a4.177 4.177 0 0 0-1.615-1.624 4.52 4.52 0 0 0-2.258-.579 4.47 4.47 0 0 0-2.25.579 4.195 4.195 0 0 0-1.605 1.624c-.392.697-.588 1.493-.588 2.39 0 .895.196 1.692.588 2.389a4.195 4.195 0 0 0 1.605 1.624 4.47 4.47 0 0 0 2.25.578zm15.353 2.39c-1.307 0-2.492-.308-3.556-.924a6.711 6.711 0 0 1-2.51-2.53c-.61-1.07-.915-2.246-.915-3.528 0-1.281.305-2.457.914-3.528a6.711 6.711 0 0 1 2.511-2.529C68.108 6.308 69.294 6 70.6 6c1.307 0 2.492.308 3.556.924a6.711 6.711 0 0 1 2.51 2.53c.61 1.07.915 2.246.915 3.527 0 1.282-.305 2.458-.914 3.528a6.711 6.711 0 0 1-2.511 2.53c-1.064.616-2.25.924-3.556.924zm0-2.39a4.52 4.52 0 0 0 2.259-.578 4.177 4.177 0 0 0 1.614-1.624c.392-.697.588-1.494.588-2.39 0-.896-.196-1.692-.588-2.389a4.177 4.177 0 0 0-1.614-1.624 4.52 4.52 0 0 0-2.259-.579 4.47 4.47 0 0 0-2.25.579 4.195 4.195 0 0 0-1.605 1.624c-.392.697-.588 1.493-.588 2.39 0 .895.196 1.692.588 2.389a4.195 4.195 0 0 0 1.606 1.624 4.47 4.47 0 0 0 2.249.578zM79.83 6.3h2.52v5.73h.15l4.89-5.73h3.043v.149L85.6 11.973l5.338 7.542v.149h-3.08l-3.994-5.693-1.512 1.773v3.92h-2.52V6.299zM93.779 6h3.248l3.546 9.39h.15L104.268 6h3.267v13.365h-2.501v-6.589l.15-2.221h-.15l-3.398 8.81h-1.96l-3.416-8.81h-.149l.15 2.221v6.59h-2.483V6zm20.8 0h2.894l5.021 13.365h-2.781l-1.12-3.192h-5.115l-1.12 3.192h-2.781L114.579 6zm3.193 7.859l-1.176-3.36-.486-1.606h-.149l-.485 1.606-1.195 3.36h3.49zM124.553 6h4.872c.871 0 1.646.18 2.324.541.678.361 1.204.862 1.577 1.503.374.64.56 1.366.56 2.175 0 .858-.27 1.62-.812 2.286a4.617 4.617 0 0 1-2.044 1.447l-.018.13 3.584 5.134v.15h-2.894l-3.453-5.022h-1.176v5.021h-2.52V6zm4.853 6.03c.573 0 1.04-.175 1.4-.523.361-.349.542-.79.542-1.326 0-.51-.172-.945-.514-1.306-.342-.361-.806-.542-1.39-.542h-2.371v3.696h2.333zm7.23-6.03h2.52v5.73h.15l4.89-5.73h3.043v.15l-4.835 5.525 5.34 7.541v.15h-3.08l-3.996-5.694-1.512 1.773v3.92h-2.52V6z"
+                        fill="#FFF" fill-rule="nonzero" />
+                    <g>
+                        <circle fill="#5267DF" cx="12.5" cy="12.5" r="12.5" />
+                        <path d="M9 9v10l3.54-3.44L16.078 19V9a2 2 0 0 0-2-2H11a2 2 0 0 0-2 2z" fill="#FFF" />
+                    </g>
+                </g>
+            </svg>
+            <nav class="footer__nav">
+                <ul class="footer__links">
+                    <li class="footer__link">Features</li>
+                    <li class="footer__link">Pricing</li>
+                    <li class="footer__link">Contact</li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="footer__socials">
+            <img src="images/icon-facebook.svg" alt="facebook">
+            <img src="images/icon-twitter.svg" alt="twitter">
+        </div>
+    </footer>
+</body>
+
+</html>
