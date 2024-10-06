@@ -71,7 +71,7 @@
 
     <div class="features">
         <h2 class="features__title">Features</h2>
-        <p class="features__text">Our aim is to make it wuick and easy for you to access your favorite websites. Your
+        <p class="features__text">Our aim is to make it quick and easy for you to access your favorite websites. Your
             bookmark sync between your devices so you can access them on the go.
         </p>
 
@@ -161,7 +161,7 @@
 
         <div class="questions__tabs" aria-label="faq" role="tablist">
             <div>
-                <div class="question__tab" aria-controls="question-one" role="tab" aria-selected="false" tabindex="0">
+                <div class="question__tab" aria-controls="question-one" role="tab" aria-selected="false" tabindex="-1">
                     <span class="tab__title--faq">What is a Bookmark?</span>
                     <img class="arrow__icon" src="images/icon-arrow.svg" alt="arrow icon">
                 </div>
@@ -172,7 +172,7 @@
                 </article>
             </div>
             <div>
-                <div class="question__tab" aria-controls="question-two" role="tab" aria-selected="false" tabindex="0">
+                <div class="question__tab" aria-controls="question-two" role="tab" aria-selected="false" tabindex="-1">
                     <span class="tab__title--faq">How can I request a new browser?</span>
                     <img class="arrow__icon" src="images/icon-arrow.svg" alt="arrow icon">
                 </div>
@@ -183,7 +183,8 @@
                 </article>
             </div>
             <div>
-                <div class="question__tab" aria-controls="question-three" role="tab" aria-selected="false" tabindex="0">
+                <div class="question__tab" aria-controls="question-three" role="tab" aria-selected="false"
+                    tabindex="-1">
                     <span class="tab__title--faq">Is there a mobile app?</span>
                     <img class="arrow__icon" src="images/icon-arrow.svg" alt="arrow icon">
                 </div>
@@ -194,8 +195,8 @@
                 </article>
             </div>
             <div>
-                <div class="question__tab" aria-controls="question-four" role="tab" aria-selected="false" tabindex="0">
-                    <span class="tab__title--faq">What about other Chromiun browsers?</span>
+                <div class="question__tab" aria-controls="question-four" role="tab" aria-selected="false" tabindex="-1">
+                    <span class="tab__title--faq">What about other Chromium browsers?</span>
                     <img class="arrow__icon" src="images/icon-arrow.svg" alt="arrow icon">
                 </div>
                 <article class="question__answer" id="question-four" role="tabpanel" tabindex="-1">
@@ -214,11 +215,13 @@
         <h2 class="contact__title">Stay up-to-date with what we're doing</h2>
         <div class="contact__formbox">
             <form role="form" action="POST" class="contact__form" id="contact-form">
-                <div class="contact__inputbox" id="input-box">
-                    <input class="contact__input" placeholder="Enter your email address" type="email" name="email">
-                    <img hidden class="contact__erroricon" id="error-icon" src="images/icon-error.svg" alt="error">
+                <div>
+                    <div class="contact__inputbox" id="input-box">
+                        <input class="contact__input" placeholder="Enter your email address" type="email" name="email">
+                        <img hidden class="contact__erroricon" id="error-icon" src="images/icon-error.svg" alt="error">
+                    </div>
+                    <p hidden class="contact__errormsg" id="error-msg"><i>Whoops, make sure it's an email</i></p>
                 </div>
-                <p hidden class="contact__errormsg" id="error-msg"><i>Whoops, make sure it's an email</i></p>
                 <button class="contact__submit" type="submit">Contact Us</button>
             </form>
         </div>
